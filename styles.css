@@ -1499,7 +1499,8 @@ footer .footer-div:nth-child(4) i:hover {
   }
   .creative_blog_area
   {
-    height: 115vh;
+    height: auto;
+    padding-bottom: 30px;
   }
   .creative_blog_area .blog-text-container
   {

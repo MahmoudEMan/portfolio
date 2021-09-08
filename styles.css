@@ -1450,8 +1450,14 @@ footer .footer-div:nth-child(4) i:hover {
   margin-bottom: 0;
   font-weight: 500;
 }
+.copyright h7 span
+{
+  color: var(--blue);
+  cursor: pointer;
+}
 
-@media (max-width :400px) {
+
+@media (max-width :430px) {
   .section-bg-text
   {
     display: none;
@@ -1671,11 +1677,17 @@ footer .footer-div:nth-child(4) i:hover {
   {
     font-size: 12px;
   }
+  .comment-form.contact-sec
+  {
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+  }
   .navbar-nav
   {
     position: absolute;
     left: -30px;
-    height: 210px;
+    height: auto;
     width: 200%;
     overflow: hidden;
     animation: navAnim 0.3s ease;

@@ -15,13 +15,13 @@ function debounce(func, wait = 90, immediate = true) {
 }
 
 
-const header = document.querySelector(".hero");
+const bradcamArea = document.querySelector(".bradcam_area");
 const nav = document.querySelector(".header-area")
 const navDropdowns = document.querySelectorAll(".dropdown-menu")
 const navDropdownsA = document.querySelectorAll(".dropdown-toggle")
 
 function ckeckNavbar() {
-  if (window.scrollY >= header.offsetHeight - 300) {
+  if (window.scrollY >= bradcamArea.offsetHeight - 300) {
     nav.classList.add("sticky")
   } else {
     nav.classList.remove("sticky")
@@ -32,51 +32,14 @@ function ckeckNavbar() {
   navDropdownsA.forEach((navDropdowna) => {
     navDropdowna.classList.remove("show")
   })
-  visibility()
 }
 
 
 
 window.addEventListener("scroll", debounce(ckeckNavbar, 10, 8000));
 
-
-
-
-// visibility
-
-const services = document.querySelector(".services")
-
-
-function visibility(){
-  const boxTop = services.getBoundingClientRect().top
-  if (boxTop < 350) {
-    services.classList.remove("hide");
-    services.classList.add("show-anim");
-  }
-}
-
-
-
 $(document).ready(function(){
-  $('.blog-carousel').owlCarousel({
-    loop:true,
-    margin:40,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:1.5
-      },
-      1000:{
-        items:2.5
-      }
-    }
-  });
+
 
 
     $('.testimonial-car').owlCarousel({

@@ -61,7 +61,7 @@ body {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --content-padding: 4% 10%;
+  --content-padding: 4% 10% 8%;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -848,6 +848,7 @@ header {
 /*instagram_feeds*/
 .single_sidebar_widget.instagram_feeds .instagram-row {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -1059,6 +1060,10 @@ header {
   color: #7a838b;
   font-family: var(--secondry-language);
   margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+.left-blog-area .single-post .navigation-top .navigation-area .travel-b-blogs .prev-next-blog-post div p:hover {
+  color: var(--blue);
 }
 
 .left-blog-area .single-post .navigation-top .navigation-area .travel-b-blogs .prev-next-blog-post:nth-child(2) div p {
@@ -1494,7 +1499,7 @@ footer .footer-div:nth-child(4) i:hover {
   }
   .creative_blog_area
   {
-    height: 95vh;
+    height: 115vh;
   }
   .creative_blog_area .blog-text-container
   {
@@ -1522,6 +1527,11 @@ footer .footer-div:nth-child(4) i:hover {
   {
     width: 100%;
   }
+  .testimonial_area .testimonial-car .item p
+  {
+    font-size: 1.4rem;
+    width: 95%;
+  }
   .owl-theme .owl-nav
   {
     display: none;
@@ -1533,6 +1543,150 @@ footer .footer-div:nth-child(4) i:hover {
   .discuss_projects .project_text h3
   {
     font-size: 3rem;
+  }
+  .bradcam_area
+  {
+    height: 50vh;
+    padding: 25px 30px;
+  }
+  .bradcam_area .bradcam_text h3
+  {
+    font-size: 2.5rem;
+  }
+  .blogs-area
+  {
+    width: auto;
+    display: block;
+    padding: 60px 15px;
+  }
+  .left-blog-area .single-post .post-image img
+  {
+    width: 100%;
+  }
+  .left-blog-area .single-post .navigation-top .navigation-area .travel-b-blogs
+  {
+    display: block;
+  }
+  .left-blog-area .single-post .navigation-top .navigation-area .travel-b-blogs .prev-next-blog-post:nth-child(2)
+  {
+    float: right;
+  }
+  .left-blog-area .single-post .blog-author
+  {
+    margin-top: 120px;
+    padding: 35px 0;
+  }
+  .single_sidebar_widget.instagram_feeds .instagram-row div
+  {
+    width: calc(80%/3);
+  }
+  .work_details_area .container
+  {
+    width: 95%;
+  }
+  .work_details_area .container .details_catagory_wrap
+  {
+    padding-top: 40px;
+    display: block;
+  }
+  .work_details_area .container .details_catagory_wrap .single_catagory
+  {
+    margin-bottom: 30px;
+  }
+  .work_details_area .container .details_catagory_wrap .single_catagory ul
+  {
+    width: auto;
+    justify-content: normal;
+  }
+  .work_details_area .container .details_catagory_wrap .single_catagory ul li
+  {
+    margin-right: 40px;
+  }
+  .work_details_area .container .details_info
+  {
+    display: block;
+  }
+  .work_details_area .container .details_single_img img
+  {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .about_wrap_area
+  {
+    padding: 70px 20px 30px;
+  }
+  .about_wrap_area .about-heading h3
+  {
+    font-size: 30px;
+  }
+  .about_wrap_area .about-info
+  {
+    display: block;
+  }
+  .about_wrap_area .about-heading-image img
+  {
+    width: 100%;
+  }
+  .creative-people
+  {
+    padding: 0 40px;
+  }
+  .creative-people .border_bottom
+  {
+    display: block;
+  }
+  .creative-people .border_bottom .single-people
+  {
+    margin-bottom: 50px;
+  }
+  .creative-people .border_bottom .single-people:nth-of-type(even)
+  {
+    transform: translateY(0);
+  }
+  .about_area .container
+  {
+    display: block;
+  }
+  .about_area .container img
+  {
+    width: 100%;
+    padding-right: 0;
+  }
+  .about_area .container .about-area-content h2
+  {
+    font-size: 30px;
+    padding: 10px 0 0;
+    line-height: normal;
+  }
+  .map
+  {
+    display: none;
+  }
+  .comment-form button
+  {
+    white-space: nowrap;
+  }
+  .left-blog-area .blog_item .blog_details ul li a, .left-blog-area .single-post .blog-details ul li a
+  {
+    font-size: 12px;
+  }
+  .navbar-nav
+  {
+    position: absolute;
+    left: -30px;
+    height: 210px;
+    width: 200%;
+    animation: navAnim 0.3s ease;
+    background-color: var(--main)
+  }
+  @keyframes navAnim {
+    from{
+      height: 0;
+    }
+    to
+    {
+      height: 210px;
+    }
   }
   /**/
   footer {
@@ -1546,7 +1700,11 @@ footer .footer-div:nth-child(4) i:hover {
   }
 
   .footer-links {
-    padding: 90px 0 170px;
+    padding: 90px 0 50px;
     display: block;
+  }
+  footer .copyright h7
+  {
+    font-size: 110%;
   }
 }

@@ -38,68 +38,7 @@ function ckeckNavbar() {
 
 window.addEventListener("scroll", debounce(ckeckNavbar, 10, 8000));
 
-const theBlogs = [
-  {
-    imgSrc:"images/blog-page-images (1).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (2).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (3).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (4).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (5).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (6).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (7).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (8).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (9).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (10).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (1).webp"
-  },
-  {
-    imgSrc:"images/blog-page-images (4).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (5).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (8).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (7).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (2).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (3).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (6).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (7).webp",
-  },
-  {
-    imgSrc:"images/blog-page-images (9).webp",
-  }
-]
+
 
 const pageNumbers = document.querySelectorAll(".page-number");
 const blogsContainer = document.querySelector(".left-blog-area-blogs-con");
@@ -115,15 +54,15 @@ pageNumbers.forEach((pageNumber) => {
     })
     pageNumber.classList.add("active");
 
-
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     blogsSelected  = [];
     for (var i = (pageNumberSelected-1) *5; i < pageNumberSelected*5; i++) {
       const blogSelecting = `<article class="blog_item">
         <div class="blog_item_img">
-          <img class="card-img rounded-0" src="${theBlogs[i].imgSrc}" alt="" data-pagespeed-url-hash="2988835027">
+          <img class="card-img rounded-0" src="images/blog-page-images (${Math.ceil(Math.random()*10)}).webp" alt="" data-pagespeed-url-hash="2988835027">
           <a href="#" class="blog_item_date">
-            <h3>15</h3>
-            <p>Jan</p>
+            <h3>${Math.ceil(Math.random()*31)}</h3>
+            <p>${months[Math.floor(Math.random()*12)]}</p>
           </a>
         </div>
         <div class="blog_details">

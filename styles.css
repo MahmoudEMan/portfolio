@@ -1676,6 +1676,7 @@ footer .footer-div:nth-child(4) i:hover {
     left: -30px;
     height: 210px;
     width: 200%;
+    overflow: hidden;
     animation: navAnim 0.3s ease;
     background-color: var(--main)
   }

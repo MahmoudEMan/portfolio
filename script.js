@@ -83,13 +83,15 @@ $(document).ready(function(){
         center: true,
         items:2,
         loop:true,
-        margin:10,
+        margin:80,
         nav:true,
         autoplay:true,
         autoplayTimeout:5000,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         responsive:{
-
+          0:{
+            items:1
+          },
             1000:{
                 items:1
             }
